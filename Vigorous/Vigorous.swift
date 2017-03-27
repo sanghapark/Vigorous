@@ -11,7 +11,7 @@ import UIKit
 
 
 public protocol Vigorous {
-  var animator: Animator! { get }
+  var animator: Animator { get }
   
 }
 

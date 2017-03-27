@@ -9,6 +9,13 @@
 import XCTest
 @testable import Vigorous
 
+
+class TestView: UIView, Vigorous {
+    lazy var animator: Animator = {
+        return self.createAnimator()
+    }()
+}
+
 class VigorousTests: XCTestCase {
     
     override func setUp() {
