@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Vigorous'
-  s.version      = '0.0.2'
+  s.version      = '0.0.3'
   s.summary      = 'Simple and easy control of iOS animations'
   s.description  = 'The Vigorous is a library to control iOS animations in a simpler and easier way.'
   s.homepage     = 'https://github.com/sanghapark/Vigorous'
