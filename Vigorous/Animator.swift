@@ -31,9 +31,10 @@ public class Animator {
   
   @discardableResult
   public func series(name: String? = nil, _ animators: [Animatable], completion: Completion? = nil) -> Self {
+    let unwrappedName = name ?? UUID().uuidString
     for animator in animators {
       let op = AnimatableOperation(animator: animator)
-      op.name = name ?? UUID().uuidString
+      op.name = unwrappedName
       op.delegate = self as Animator
       if completion != nil {
         completions[op.name!] = completion

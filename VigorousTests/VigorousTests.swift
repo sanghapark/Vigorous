@@ -12,7 +12,7 @@ import XCTest
 
 class TestView: UIView, Vigorous {
   lazy var animator: Animator = {
-    return self.createAnimator()
+    return Animator(self)
   }()
 }
 

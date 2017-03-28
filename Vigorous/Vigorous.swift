@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-public protocol Vigorous {
+public protocol Vigorous: class {
   var animator: Animator { get }
   
 }
