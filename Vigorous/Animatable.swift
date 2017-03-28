@@ -32,6 +32,15 @@ public class Animatable {
     })
   }
   
+//  public init(duration: TimeInterval, delay: TimeInterval? = nil, animation: ()->()) {
+//    
+//    UIView.animate(withDuration: duration, delay: delay ?? 0, options: nil, animations: { 
+//      animation()
+//    }) { success in
+//      
+//    }
+//  }
+  
   func animate() {
     self.animation()
   }
