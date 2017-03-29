@@ -21,12 +21,12 @@ class AnimatableOperation: AsyncOperation {
   var animatables = [Animatable]()
   var didCompleteCount = 0
   
-  init(animator: Animatable) {
-    self.animatables.append(animator)
+  init(animatable: Animatable) {
+    self.animatables.append(animatable)
   }
   
-  init(animators: [Animatable]) {
-    self.animatables = animators
+  init(animatables: [Animatable]) {
+    self.animatables = animatables
   }
   
   override func main() {

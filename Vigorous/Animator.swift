@@ -18,8 +18,10 @@ public class Animator {
   private var animationQueue = OperationQueue()
   
   fileprivate var delaying = false
-  
+
   lazy var completions = [String: Completion]()
+  
+//  lazy var opWithCompletion = [String: ([Animatable], Completion?)]
   
   public init(_ view: UIView) {
     self.view = view
@@ -30,10 +32,10 @@ public class Animator {
   
   
   @discardableResult
-  public func series(name: String? = nil, _ animators: [Animatable], completion: Completion? = nil) -> Self {
+  public func series(name: String? = nil, _ animatables: [Animatable], completion: Completion? = nil) -> Self {
     let unwrappedName = name ?? UUID().uuidString
-    for animator in animators {
-      let op = AnimatableOperation(animator: animator)
+    for animatable in animatables {
+      let op = AnimatableOperation(animatable: animatable)
       op.name = unwrappedName
       op.delegate = self as Animator
       if completion != nil {
@@ -45,8 +47,8 @@ public class Animator {
   }
   
   @discardableResult
-  public func series(name: String? = nil, _ animator: Animatable, completion: Completion? = nil) -> Self {
-    let op = AnimatableOperation(animator: animator)
+  public func series(name: String? = nil, _ animatable: Animatable, completion: Completion? = nil) -> Self {
+    let op = AnimatableOperation(animatable: animatable)
     op.name = name ?? UUID().uuidString
     op.delegate = self as Animator
     if completion != nil {
@@ -57,8 +59,8 @@ public class Animator {
   }
   
   @discardableResult
-  public func parallel(name: String? = nil, _ animators: [Animatable], completion: Completion? = nil) -> Self {
-    let op = AnimatableOperation(animators: animators)
+  public func parallel(name: String? = nil, _ animatables: [Animatable], completion: Completion? = nil) -> Self {
+    let op = AnimatableOperation(animatables: animatables)
     op.name = name ?? UUID().uuidString
     op.delegate = self as Animator
     if completion != nil {
@@ -67,6 +69,8 @@ public class Animator {
     self.animationQueue.addOperation(op)
     return self
   }
+  
+
   
   @discardableResult
   public func delay(name: String? = nil, for time: TimeInterval, completion: Completion? = nil) -> Self {
@@ -110,6 +114,18 @@ public class Animator {
     return true
   }
   
+  @discardableResult
+  public func `repeat`(for count: Int = 0, body: (Animator) ->()) -> Self {
+    guard count > 0 else { return self }
+    
+    return self
+  }
+  
+  @discardableResult
+  public func `repeat`(for count: Int = 0) -> Self {
+    
+    return self
+  }
 }
 
 

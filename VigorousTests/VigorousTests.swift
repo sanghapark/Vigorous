@@ -31,6 +31,11 @@ class VigorousTests: XCTestCase {
   }
   
   func testExample() {
+    testView.animator
+      .repeat {
+        $0.series(<#T##animator: Animatable##Animatable#>, completion: <#T##Animator.Completion?##Animator.Completion?##(Bool) -> ()#>)
+      }
+    
   }
   
   func testPerformanceExample() {
