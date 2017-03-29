@@ -17,6 +17,7 @@
 		1B943CB61E8ABBB100287C5F /* OriginMovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B943CAE1E8ABBB100287C5F /* OriginMovable.swift */; };
 		1B943CB71E8ABBB100287C5F /* ScaleChangeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B943CAF1E8ABBB100287C5F /* ScaleChangeable.swift */; };
 		1B943CB81E8ABBB100287C5F /* AlphaChangeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B943CB01E8ABBB100287C5F /* AlphaChangeable.swift */; };
+		1B943CBA1E8B4EA200287C5F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B943CB91E8B4EA200287C5F /* TestView.swift */; };
 		1BA4A4961E8AA1C300A6BB6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4A4951E8AA1C300A6BB6D /* AppDelegate.swift */; };
 		1BA4A4981E8AA1C300A6BB6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4A4971E8AA1C300A6BB6D /* ViewController.swift */; };
 		1BA4A49B1E8AA1C300A6BB6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA4A4991E8AA1C300A6BB6D /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 		1B943CAE1E8ABBB100287C5F /* OriginMovable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginMovable.swift; sourceTree = "<group>"; };
 		1B943CAF1E8ABBB100287C5F /* ScaleChangeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleChangeable.swift; sourceTree = "<group>"; };
 		1B943CB01E8ABBB100287C5F /* AlphaChangeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaChangeable.swift; sourceTree = "<group>"; };
+		1B943CB91E8B4EA200287C5F /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		1BA4A4921E8AA1C300A6BB6D /* VigorousExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VigorousExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA4A4951E8AA1C300A6BB6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BA4A4971E8AA1C300A6BB6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				1B943CA81E8ABB9500287C5F /* Animatables */,
 				1BA4A4951E8AA1C300A6BB6D /* AppDelegate.swift */,
 				1BA4A4971E8AA1C300A6BB6D /* ViewController.swift */,
+				1B943CB91E8B4EA200287C5F /* TestView.swift */,
 				1BA4A4991E8AA1C300A6BB6D /* Main.storyboard */,
 				1BA4A49C1E8AA1C300A6BB6D /* Assets.xcassets */,
 				1BA4A49E1E8AA1C300A6BB6D /* LaunchScreen.storyboard */,
@@ -309,6 +312,7 @@
 			files = (
 				1B943CB81E8ABBB100287C5F /* AlphaChangeable.swift in Sources */,
 				1BA4A4981E8AA1C300A6BB6D /* ViewController.swift in Sources */,
+				1B943CBA1E8B4EA200287C5F /* TestView.swift in Sources */,
 				1B943CB41E8ABBB100287C5F /* BackgroundColorChangeable.swift in Sources */,
 				1B943CB11E8ABBB100287C5F /* Rotatable.swift in Sources */,
 				1B943CB71E8ABBB100287C5F /* ScaleChangeable.swift in Sources */,

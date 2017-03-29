@@ -31,7 +31,6 @@ class VigorousTests: XCTestCase {
   }
   
   func testExample() {
-    
   }
   
   func testPerformanceExample() {

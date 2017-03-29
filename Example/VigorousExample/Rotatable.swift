@@ -19,7 +19,7 @@ extension Rotatable where Self: UIView {
         CATransaction.begin()
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.fromValue = 0.0
-        rotateAnimation.toValue = CGFloat(M_PI * 2)
+        rotateAnimation.toValue = CGFloat(Double.pi * 2)
         rotateAnimation.isRemovedOnCompletion = false
         rotateAnimation.duration = 2
         rotateAnimation.repeatCount = 2
@@ -38,7 +38,7 @@ extension Rotatable where Self: UIView {
         CATransaction.begin()
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.fromValue = 0.0
-        rotateAnimation.toValue = CGFloat(M_PI * 2)
+        rotateAnimation.toValue = CGFloat(Double.pi * 2)
         rotateAnimation.isRemovedOnCompletion = false
         rotateAnimation.duration = 2
         rotateAnimation.repeatCount=Float.infinity

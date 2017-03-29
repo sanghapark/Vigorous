@@ -9,21 +9,18 @@
 import UIKit
 import Vigorous
 
-class TestView: UIView, Vigorous {
-  lazy var animator: Animator = {
-    return Animator(self)
-  }()
-}
-
 class ViewController: UIViewController {
 
-  
-  let testView = TestView()
-  
+  @IBOutlet weak var testView: TestView!
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    
+  }
+  
+  
+  @IBAction func onStart(_ sender: Any) {
+    testView.animate()
   }
 
 }

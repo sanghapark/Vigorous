@@ -32,14 +32,16 @@ public class Animatable {
     })
   }
   
-//  public init(duration: TimeInterval, delay: TimeInterval? = nil, animation: ()->()) {
-//    
-//    UIView.animate(withDuration: duration, delay: delay ?? 0, options: nil, animations: { 
-//      animation()
-//    }) { success in
-//      
-//    }
-//  }
+  public init(_ duration: TimeInterval, delay: TimeInterval? = nil, animation: @escaping Animation) {
+    self.animation = {
+      UIView.animate(withDuration: duration, delay: delay ?? 0, options: [], animations: {
+        animation()
+      }, completion: { [weak self] success in
+        guard let strongSelf = self else { return }
+        strongSelf.completion(success: success)
+      })
+    }
+  }
   
   func animate() {
     self.animation()

@@ -110,12 +110,6 @@ public class Animator {
     return true
   }
   
-  @discardableResult
-  public func replay(for count: Int = 0, body: (Animator) ->()) -> Self {
-    
-    return self
-  }
-  
 }
 
 
