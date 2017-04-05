@@ -9,25 +9,33 @@
 import UIKit
 import Vigorous
 
-class TestView: UIView, Vigorous, CornerRadiusChangeable {
+class TestView: UIView, Vigorously, CornerRadiusChangeable {
   
-  lazy var animator: Animator = {
-    return Animator(self)
+  lazy var vigorous: Vigorous = {
+    return Vigorous(self)
   }()
   
-  
   func animate() {
-    animator
-      .series(Animatable(3) { self.backgroundColor = .blue })
-      .parallel([
+    vigorous.animate(
+      Animator()
+        .serial(Animatable(3) { self.backgroundColor = .blue })
+        .parallel([
           Animatable(2) { self.backgroundColor = .red },
           cornerRadius(value: frame.height / 2),
           Animatable(2) { self.center.x += 200 }
         ])
-      .series(Animatable(1) { self.center.x -= 200 })
-      .series(cornerRadius(value: 0)) { _ in
-        self.animate()
-      }
+        .serial(Animatable(1) { self.center.x -= 200 })
+        .serial(cornerRadius(value: 0)) { _ in
+          self.animate()
+        }
+    )
+    
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + 20) { 
+      self.vigorous
+        .cancelAll()
+        .animate(Animatable(3) { self.backgroundColor = .yellow })
+    }
   }
 
   

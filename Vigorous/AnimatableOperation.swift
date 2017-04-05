@@ -14,6 +14,7 @@ protocol AnimatableOperationDelegate {
 
 class AnimatableOperation: AsyncOperation {
   
+  
   typealias Executable = ( @escaping (_ success: Bool)->() ) -> ()
   
   var delegate: AnimatableOperationDelegate?

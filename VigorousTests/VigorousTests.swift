@@ -10,10 +10,10 @@ import XCTest
 @testable import Vigorous
 
 
-class TestView: UIView, Vigorous {
-  lazy var animator: Animator = {
-    return Animator(self)
-  }()
+
+
+class TestView: UIView, Vigorously {
+  lazy var vigorous: Vigorous = { Vigorous(self) }()
 }
 
 class VigorousTests: XCTestCase {
@@ -31,11 +31,6 @@ class VigorousTests: XCTestCase {
   }
   
   func testExample() {
-    testView.animator
-      .repeat {
-        $0.series(<#T##animator: Animatable##Animatable#>, completion: <#T##Animator.Completion?##Animator.Completion?##(Bool) -> ()#>)
-      }
-    
   }
   
   func testPerformanceExample() {

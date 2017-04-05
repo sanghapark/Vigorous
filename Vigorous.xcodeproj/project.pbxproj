@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BE38FB71E937618003E4533 /* Vigorous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE38FB61E937618003E4533 /* Vigorous.swift */; };
 		1BEB98301E88ECCB00627B80 /* Vigorous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEB98261E88ECCB00627B80 /* Vigorous.framework */; };
 		1BEB98351E88ECCB00627B80 /* VigorousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB98341E88ECCB00627B80 /* VigorousTests.swift */; };
 		1BEB98371E88ECCB00627B80 /* Vigorous.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BEB98291E88ECCB00627B80 /* Vigorous.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BEB98461E88ECDA00627B80 /* Vigorous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB98401E88ECDA00627B80 /* Vigorous.swift */; };
+		1BEB98461E88ECDA00627B80 /* Vigorously.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB98401E88ECDA00627B80 /* Vigorously.swift */; };
 		1BEB98471E88ECDA00627B80 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB98411E88ECDA00627B80 /* Animator.swift */; };
 		1BEB98481E88ECDA00627B80 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB98421E88ECDA00627B80 /* Animatable.swift */; };
 		1BEB98491E88ECDA00627B80 /* AnimatableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB98431E88ECDA00627B80 /* AnimatableOperation.swift */; };
@@ -29,13 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BE38FB61E937618003E4533 /* Vigorous.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vigorous.swift; sourceTree = "<group>"; };
 		1BEB98261E88ECCB00627B80 /* Vigorous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vigorous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEB98291E88ECCB00627B80 /* Vigorous.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vigorous.h; sourceTree = "<group>"; };
 		1BEB982A1E88ECCB00627B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BEB982F1E88ECCB00627B80 /* VigorousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VigorousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEB98341E88ECCB00627B80 /* VigorousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigorousTests.swift; sourceTree = "<group>"; };
 		1BEB98361E88ECCB00627B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BEB98401E88ECDA00627B80 /* Vigorous.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vigorous.swift; sourceTree = "<group>"; };
+		1BEB98401E88ECDA00627B80 /* Vigorously.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vigorously.swift; sourceTree = "<group>"; };
 		1BEB98411E88ECDA00627B80 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		1BEB98421E88ECDA00627B80 /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
 		1BEB98431E88ECDA00627B80 /* AnimatableOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableOperation.swift; sourceTree = "<group>"; };
@@ -83,7 +85,8 @@
 		1BEB98281E88ECCB00627B80 /* Vigorous */ = {
 			isa = PBXGroup;
 			children = (
-				1BEB98401E88ECDA00627B80 /* Vigorous.swift */,
+				1BEB98401E88ECDA00627B80 /* Vigorously.swift */,
+				1BE38FB61E937618003E4533 /* Vigorous.swift */,
 				1BEB98411E88ECDA00627B80 /* Animator.swift */,
 				1BEB98421E88ECDA00627B80 /* Animatable.swift */,
 				1BEB98431E88ECDA00627B80 /* AnimatableOperation.swift */,
@@ -219,7 +222,8 @@
 			files = (
 				1BEB98471E88ECDA00627B80 /* Animator.swift in Sources */,
 				1BEB98481E88ECDA00627B80 /* Animatable.swift in Sources */,
-				1BEB98461E88ECDA00627B80 /* Vigorous.swift in Sources */,
+				1BE38FB71E937618003E4533 /* Vigorous.swift in Sources */,
+				1BEB98461E88ECDA00627B80 /* Vigorously.swift in Sources */,
 				1BEB984A1E88ECDA00627B80 /* AsyncOperation.swift in Sources */,
 				1BEB98491E88ECDA00627B80 /* AnimatableOperation.swift in Sources */,
 				1BEB984B1E88ECDA00627B80 /* DelayOperation.swift in Sources */,
