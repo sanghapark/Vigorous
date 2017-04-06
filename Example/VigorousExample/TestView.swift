@@ -9,14 +9,14 @@
 import UIKit
 import Vigorous
 
-class TestView: UIView, Vigorously, CornerRadiusChangeable {
+class TestView: UIView, CornerRadiusChangeable {
   
-  lazy var vigorous: Vigorous = {
-    return Vigorous(self)
+  lazy var vigorously: Vigorously = {
+    return Vigorously(self)
   }()
   
   func animate() {
-    vigorous.animate(
+    vigorously.animate(
       Animator()
         .serial(Animatable(3) { self.backgroundColor = .blue })
         .parallel([
@@ -32,7 +32,7 @@ class TestView: UIView, Vigorously, CornerRadiusChangeable {
     
     
     DispatchQueue.main.asyncAfter(deadline: .now() + 20) { 
-      self.vigorous
+      self.vigorously
         .cancelAll()
         .animate(Animatable(3) { self.backgroundColor = .yellow })
     }
